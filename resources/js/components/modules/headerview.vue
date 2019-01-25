@@ -12,7 +12,7 @@
 				</div>
 
 				<span class="topbar-child1">
-					Free shipping for standard order over $100
+					{{msg}}
 				</span>
 
 				<div class="topbar-child2">
@@ -62,11 +62,11 @@
 							</li>
 
 							<li>
-								<a href="about.html">About</a>
+								<router-link to="/aboutus">About us</router-link>
 							</li>
 
 							<li>
-								<a href="contact.html">Contact</a>
+								<router-link to="/contact">Contact</router-link>
 							</li>
 						</ul>
 					</nav>
@@ -192,7 +192,7 @@
 
 									<div class="header-cart-item-txt">
 										<a href="#" class="header-cart-item-name">
-											White Shirt With Pleat Detail Back
+											{{msg}}
 										</a>
 
 										<span class="header-cart-item-info">
@@ -333,15 +333,24 @@
 					<li class="item-menu-mobile">
 						<a href="contact.html">Contact</a>
 					</li>
+					
 				</ul>
+				
 			</nav>
 		</div>
 	</header>
 </template>
 
 <script>
+import jquery from 'jquery'
 export default {
-    name:'headerview'
+	name:'headerview',
+	data(){
+		return {
+			msg:'data work'
+		}
+	}
 }
+
 </script>
 

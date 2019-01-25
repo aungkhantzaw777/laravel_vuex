@@ -114,6 +114,12 @@
 							FAQs
 						</a>
 					</li>
+
+					<li class="p-b-9">
+						<router-link to="/admin" class="s-text7">
+							admin
+						</router-link>
+					</li>
 				</ul>
 			</div>
 
